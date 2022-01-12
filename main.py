@@ -1,7 +1,6 @@
 from flask import Flask, request, jsonify, render_template
 from flask_sqlalchemy import SQLAlchemy
 from sqlalchemy import text
-from guides_sql import *
 import json
 
 app = Flask(__name__)
