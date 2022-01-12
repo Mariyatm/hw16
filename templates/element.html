@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+<form method="post">
+    <table>
+        <tr>
+            {% for column in columns %}
+            <td> {{column}}: {{element[column]}}</td>
+            {% endfor %}
+        </tr>
+    </table>
+</form>
+</body>
+</html>

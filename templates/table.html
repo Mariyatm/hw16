@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+<form method="post">
+    <table>
+        <tr>
+    {% for column in columns %}
+        <td>
+    <input type="text" name={{column}} placeholder={{column}}>
+        </td>
+    {% endfor %}
+            <td>
+    <input type="submit" value="Add element">
+            </td>
+        </tr>
+    {% for element in elements %}
+        <tr>
+        {% for column in columns %}
+            <td> {{element[column]}} </td>
+        {% endfor %}
+            <td> </td>
+         </tr>
+    {% endfor %}
+    </table>
+</form>
+</body>
+</html>
